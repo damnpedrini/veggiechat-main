@@ -1,4 +1,4 @@
-# VeggieChat
+# VeggieChat🌱
 
 ## Overview
 VeggieChat is a versatile iOS application that combines calorie tracking with a unique chat feature powered by the OpenAI API. In addition to helping you monitor your daily food intake and calorie consumption, VeggieChat allows you to interact with an AI-powered chatbot to discover vegan recipes. Whether you're new to veganism or a seasoned plant-based eater, VeggieChat provides a convenient way to explore delicious vegan dishes.
