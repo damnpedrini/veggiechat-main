@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct AccountView: View {
+    @State var vegetarianMode: Bool = false
     @State var notificationToggle: Bool = false
     @State var locationUsage: Bool = false
     @State var username: String = "James"
@@ -18,18 +19,20 @@ struct AccountView: View {
                     .padding(.bottom, 10)
                 Text("Pedrini")
                     .font(.system(size: 20))
-                    
+                
                 Form {
-                                    Section(header: Text("Personal Information")) {
-                                        NavigationLink(destination: ProfileView()) {
-                                            Text("Profile Information")
-                                        }
-                                    }
-                                    
+                    Section(header: Text("Personal Information")) {
+                        NavigationLink(destination: ProfileView()) {
+                            Text("Profile Information")
+                        }
+                    }
                     
                     Section(footer: Text("Allow push notifications to get latest travel and equipment deals")) {
                         Toggle(isOn: self.$locationUsage) {
                             Text("Location Usage")
+                        }
+                        Toggle(isOn: self.$vegetarianMode) {
+                            Text("Vegetarian Mode")
                         }
                         Toggle(isOn: self.$notificationToggle) {
                             Text("Notifications")
